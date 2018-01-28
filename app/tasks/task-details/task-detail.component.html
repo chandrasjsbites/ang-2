@@ -1,0 +1,24 @@
+<div class="container">
+  <img [src]="task?.imageUrl" [alt]="task?.name" class="event-image">
+
+  <div class="row">
+    <div class="col-md-11">
+      <h2>{{task?.name}} </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div><strong>Date:</strong> {{task?.date}}</div>
+      <div><strong>Time:</strong> {{task?.time}}</div>
+      <div><strong>Price:</strong> \${{task?.price}}</div>
+    </div>
+    <div class="col-md-6">
+      <address>
+        <strong>Address:</strong><br />
+        {{task?.location?.address}}<br />
+        {{task?.location?.city}}, {{task?.location?.country}}
+      </address>
+    </div>
+  </div>
+</div>

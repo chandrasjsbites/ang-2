@@ -1,0 +1,7 @@
+export * from './create-task.component'
+export * from './task-list.component'
+export * from './task-list-resolver.service'
+export * from './task-thumbnail.component'
+export * from './shared/event.service'
+export * from './errors/error404.component'
+export * from './task-details/index'
